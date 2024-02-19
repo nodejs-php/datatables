@@ -5,8 +5,12 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/sass/app.scss',
                 'resources/js/app.js',
+                'resources/js/datatables.js',
+                'resources/js/custom.js',
+
+                'resources/sass/app.scss',
+                'resources/sass/deferred.scss',
             ],
             refresh: true,
         }),
