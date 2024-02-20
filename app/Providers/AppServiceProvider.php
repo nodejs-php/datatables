@@ -2,12 +2,10 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
-use Yajra\DataTables\Html\Builder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\ServiceProvider;
+use Yajra\DataTables\Html\Builder;
 
 class AppServiceProvider extends ServiceProvider
 {

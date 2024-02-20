@@ -2,8 +2,6 @@
 
 namespace App\Service;
 
-use GuzzleHttp\ClientInterface;
-
 class OzonService
 {
     private int $clientId;
