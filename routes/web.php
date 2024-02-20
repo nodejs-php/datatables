@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\HomeController;
+use \App\Http\Controllers\ParserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +15,13 @@ use App\Http\Controllers\UsersController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/', function () {
+    return view('home');
+});
+
 Auth::routes();
 
-Route::get('/', [UsersController::class, 'index'])->name('users.index');
-
-
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/users', [UsersController::class, 'index'])->name('users.index');
+Route::get('/token', [ParserController::class, 'index'])->name('parser.index');
