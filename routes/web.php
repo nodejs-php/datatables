@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\HomeController;
-use \App\Http\Controllers\ParserController;
+use \App\Http\Controllers\OzonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +24,4 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/users', [UsersController::class, 'index'])->name('users.index');
-Route::get('/products', [ParserController::class, 'products'])->name('parser.index');
+Route::get('/products', [OzonController::class, 'products'])->name('parser.index');

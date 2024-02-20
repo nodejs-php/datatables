@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Service\OzonService;
 
-class ParserController extends Controller
+class OzonController extends Controller
 {
     public function products(OzonService $ozonService): array
     {
