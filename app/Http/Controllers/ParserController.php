@@ -6,10 +6,8 @@ use App\Service\OzonService;
 
 class ParserController extends Controller
 {
-    public function token(OzonService $ozonService)
+    public function products(OzonService $ozonService): array
     {
-        $token = $ozonService->getToken();
-
-        return $token ;
+        return $ozonService->getProductList();;
     }
 }

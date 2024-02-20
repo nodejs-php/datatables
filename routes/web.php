@@ -24,4 +24,4 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/users', [UsersController::class, 'index'])->name('users.index');
-Route::get('/token', [ParserController::class, 'index'])->name('parser.index');
+Route::get('/products', [ParserController::class, 'products'])->name('parser.index');
